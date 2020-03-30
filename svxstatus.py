@@ -93,6 +93,9 @@ for line in loglines:
             print ("Module Echolink Actif")
             listecho =[]
 
+        elif "Deactivating module EchoLink" in line:
+            print ("Module Echolink Inactif")
+
         elif ": SvxLink 1.6.99.16" in line and len(line) < 60:
             print ("Incomming list detected")
             timeinfo= line.split(":")
